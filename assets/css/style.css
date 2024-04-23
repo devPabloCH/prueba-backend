@@ -1,0 +1,583 @@
+
+:root {
+    font-size: 13px !important;
+}
+
+body,
+.btn {
+    font-size: 0.85em;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgb(190, 190, 190);
+}
+
+.card-0 {
+    margin-bottom: 0rem;
+    box-shadow: none !important;
+}
+
+table.collapse-row {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    table-layout: fixed;
+}
+
+table.collapse-row caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table.collapse-row tr {
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table.collapse-row th,
+table.collapse-row td {
+    padding: .625em;
+    text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+    table.collapse-row {
+        border: 0;
+    }
+    table.collapse-row caption {
+        font-size: 1.3em;
+    }
+    table.collapse-row thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table.collapse-row tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    table.collapse-row td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 1em;
+        text-align: right;
+    }
+    table.collapse-row td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+    table.collapse-row td:last-child {
+        border-bottom: 0;
+    }
+}
+
+body.vertical-layout.vertical-menu-modern .main-menu .navigation .menu-content>li>a>i.menu-livicon {
+    width: 20px !important;
+}
+
+.main-menu .navbar-header .navbar-brand .brand-logo {
+    background: url(../../app-assets/images/logo/logo.png) no-repeat;
+    background-size: contain;
+    height: 65px;
+    width: 100px;
+    float: left;
+    margin-top: 0.2rem;
+    margin-left: 50px;
+}
+
+.main-menu .navbar-header .navbar-brand .brand-text {
+    font-size: 1.2rem;
+}
+
+.table.dataTable thead .sorting:before,
+.table.dataTable thead .sorting:after,
+.table.dataTable thead .sorting_asc:before,
+.table.dataTable thead .sorting_asc:after,
+.table.dataTable thead .sorting_desc:before,
+.table.dataTable thead .sorting_desc:after {
+    top: 0px;
+}
+
+.table.dataTable thead .sorting:after,
+.table.dataTable thead .sorting_asc:after,
+.table.dataTable thead .sorting_desc:after,
+.table.dataTable thead .sorting_desc_disabled:after {
+    padding-top: 0.5em;
+}
+
+.btn {
+    padding: 0.27rem 1rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.btn-sm,
+.btn-group-sm>.btn {
+    padding: 0.25rem 0.25rem;
+    margin-left: 3px;
+}
+
+.btn-sm i {
+    font-size: 1rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.autocomplete-wrapper {
+    margin: 44px auto 44px;
+    max-width: 600px;
+}
+
+.autocomplete-wrapper label {
+    display: block;
+    margin-bottom: .75em;
+    color: #3f4e5e;
+    font-size: 1.25em;
+}
+
+.autocomplete-wrapper .text-field {
+    padding: 0 15px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #CBD3DD;
+    font-size: 1.125em;
+}
+
+.autocomplete-wrapper ::-webkit-input-placeholder {
+    color: #CBD3DD;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.autocomplete-wrapper :-moz-placeholder {
+    color: #CBD3DD;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.autocomplete-wrapper ::-moz-placeholder {
+    color: #CBD3DD;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.autocomplete-wrapper :-ms-input-placeholder {
+    color: #CBD3DD;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.autocomplete-suggestions {
+    overflow: auto;
+    border: 1px solid #CBD3DD;
+    background: #FFF;
+}
+
+.autocomplete-suggestion {
+    overflow: hidden;
+    padding: 5px 15px;
+    white-space: normal;
+}
+
+.autocomplete-selected {
+    background: #F0F0F0;
+}
+
+.autocomplete-suggestions strong {
+    color: #029cca;
+    font-weight: normal;
+}
+
+.autocomplete-group {
+    padding: 2px 5px;
+}
+
+.autocomplete-group strong {
+    display: block;
+    border-bottom: 1px solid #000;
+}
+
+#map {
+    padding: 0;
+    margin: 0;
+    height: 350px;
+}
+
+@media (max-width: 360px) {
+    #map {
+        height: 270px;
+    }
+}
+
+.leaflet-popup-content {
+    min-width: 250px;
+}
+
+.select2 {
+    width: 100%;
+}
+
+.form-control {
+    font-size: 1.1rem;
+}
+
+.form-group label {
+    font-size: 12px;
+}
+
+.invalid-feedback {
+    display: block;
+}
+
+span.select2-container {
+    z-index: 1050;
+}
+
+.select2-dropdown.increasedzindexclass {
+    z-index: 9999;
+}
+
+.modal-body {
+    min-height: 25vh;
+}
+
+.toast {
+    font-size: .85rem;
+}
+
+.foto_empleado {
+    height: 50px !important;
+}
+
+button.dt-button,
+div.dt-button,
+a.dt-button {
+    color: #FFFFFF !important;
+    background-color: #3f5369 !important;
+    border-color: #3f5369 !important;
+    background-image: -webkit-linear-gradient(top, #3f5369 0%, #3f5369 100%) !important;
+    border-radius: 1.5rem;
+}
+
+button.dt-button.active,
+div.dt-button.active,
+a.dt-button.active {
+    color: #FFFFFF !important;
+    background-color: #2b3846 !important;
+    border-color: #2b3846 !important;
+    background-image: -webkit-linear-gradient(top, #2b3846 0%, #2b3846 100%) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.checkbox label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.checkbox label:after {
+    border: 1px solid rgb(187, 189, 190);
+}
+
+.img-svg {
+    stroke: rgba(139, 175, 243, 0.68);
+    color: rgba(139, 175, 243, 0.68);
+    filter: invert(1);
+}
+
+.main-menu.menu-dark .navigation li a {
+    color: black;
+    font-size: .85rem;
+}
+
+.marker-gps-image {
+    width: 40px;
+    height: 40px;
+    right: -10px;
+    top: -10px;
+    position: absolute;
+}
+
+.marker-gps.active {
+    z-index: 100000;
+}
+
+.marker-gps-image.active {
+    width: 55px;
+    height: 55px;
+    z-index: 10000;
+}
+
+.marker-gps-name.active {
+    top: 35px;
+    font-size: 18px;
+    z-index: 10000;
+}
+
+.marker-gps-image-history {
+    width: 30px;
+    height: 30px;
+    right: -7px;
+    top: -10px;
+    position: absolute;
+}
+
+.marker-gps-name {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px #DEDEDE;
+    color: var(--bg-color);
+    width: 120px;
+    top: 25px;
+    position: absolute;
+    left: -30px;
+    font-size: 14px;
+}
+
+.leaflet-container {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+.leaflet-popup {
+    top: -70px;
+    left: 30px !important;
+}
+
+.leaflet-popup-content {
+    min-width: 220px !important;
+    max-width: 220px !important;
+}
+
+.leaflet-popup-content .table td,
+.leaflet-popup-content .table th {
+    padding: .1rem;
+}
+
+.leaflet-popup-tip-container {
+    top: 0px !important;
+    overflow: auto important!;
+}
+
+.leaflet-popup-tip {
+    box-shadow: none !important;
+    background-clip: none !important;
+}
+
+.leaflet-popup:before {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+    border-right-color: white;
+    bottom: 0px;
+    left: -30px;
+    top: 50px;
+}
+
+.main-menu .navbar-header {
+    height: 7.3rem;
+}
+
+.main-menu:not(.expanded) .navbar-header .navbar-brand .brand-logo {
+    height: 45px;
+    width: 45px;
+    margin-left: 0px;
+}
+
+.producto_image {
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    padding-top: 3px;
+    margin: auto;
+}
+
+.producto_image img {
+    height: 70px;
+    margin-top: 10px;
+}
+
+.radio label {
+    font-size: .85rem;
+}
+
+.form-control {
+    height: calc(1.0em + 0.95rem + 3.7px);
+    padding: 0.27rem 0.4rem;
+}
+
+.card-title {
+    font-weight: bold !important;
+}
+
+.map_address {
+    margin: 1px;
+    box-shadow: 1px 1px 1px 1px #dedede;
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.map_full {
+    margin: 1px;
+    box-shadow: 1px 1px 1px 1px #dedede;
+    width: 100%;
+    height: 80vh;
+    margin-top: 10px;
+}
+
+.card-ficha {
+    box-shadow: 0px 0px 11px 0 rgb(25 42 70 / 13%);
+    transition: all .3s ease-in-out;
+    border: solid 1px #dedede;
+    padding: 4px 0px;
+}
+
+.disabled,
+ :disabled {
+    color: #9b9b9b !important;
+}
+
+.form-group {
+    margin-bottom: .5rem;
+}
+
+.form-group.issue .help-block,
+.form-group.issue .help-inline,
+.form-group.error .help-block,
+.form-group.error .help-inline {
+    width: 100%;
+    background: #ff5b5c;
+    background: linear-gradient(90deg, rgba(223, 10, 11, 1) 0%, rgba(244, 59, 60, 1) 35%, rgba(255, 91, 92, 1) 100%);
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form-group .help-block ul li {
+    font-size: 0.7rem;
+    padding: 0.15rem;
+    padding-left: 7px;
+}
+
+.form-group .help-block ul {
+    margin: 0px;
+}
+
+.form-group.error input {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.form-group .help-block ul li::before {
+    content: " ";
+}
+
+.datetime {
+    color: #5f5f5f;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.dateday {
+    color: #5f5f5f;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    vertical-align: center;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.leaflet-routing-container h2 {
+    display: none;
+}
+
+.divActionMap {
+    position: absolute;
+    z-index: 1000;
+    right: 10%;
+    top: 15%;
+}
+
+.jexcel {
+    width: 100%;
+}
+
+.jexcel thead {
+    font-weight: bold;
+}
+
+.jexcel>thead>tr>td:first-child,
+.jexcel>tbody>tr>td:first-child {
+    width: 25px!important;
+}
+
+.chat-application .chat-window-wrapper .chat-container,
+.chat-application .chat-window-wrapper .chat-start {
+    background-image: none !important;
+}
+
+.chat-message {
+    min-width: 120px;
+}
+
+.bootstrap-select {
+    z-index: 2000 !important;
+}
+
+.btn-outline-light {
+    color: #000 !important;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    text-align: center;
+}
+
+.sello_select {
+    height: 120px;
+    width: 130px;
+}

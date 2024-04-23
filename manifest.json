@@ -1,0 +1,13 @@
+{
+    "name": "30 Hotel",
+    "short_name": "30 Hotel",
+    "theme_color": "#c05604",
+    "background_color": "#c05604",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [{
+        "src": "app-assets/images/logo/logo-white.png",
+        "type": "image/png",
+        "sizes": "152x121"
+    }]
+}
